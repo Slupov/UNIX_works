@@ -284,6 +284,13 @@ main()
     done
 }
 
-{
-    main
-} > solution_script_logs.txt
+main
+
+# Enable the following lines to redirect script output to a given file
+# This way the console application will not be really user friendly though because
+# all messages for prompting the user will be logged into a file and not onto the
+# main stdout (terminal)... We'll keep the interactiveness by commenting out the 
+# output redirection but will leave it in the script so it matches the task's requirements
+# {
+#     main
+# } > solution_script_logs.txt
